@@ -14,7 +14,6 @@ header {
     flex-flow: row wrap;
     width: 1200px;
     height: 100%;
-    background-color: #f0f;
 }
 .menu {
     width: 100px;
@@ -22,12 +21,10 @@ header {
     padding: 1em;
 }
 .menu:first-child {
-    background-color: #ff0;
     flex-grow: 1;
     
 }
 .menu:last-child {
-    background-color: #007;
    /* margin-left: auto; */
    display:flex;
    justify-content:center;
@@ -36,11 +33,23 @@ header {
    margin: 0px;
 }   
 .menu li a{
-    color: #fff;
+    color: #000;
 }    
 .menu li{
     width: 25%;
     margin: auto;
     text-align: center;
     list-style: none;
+}
+@media 
+  (min-width: 0px) 
+  and (max-width: 800px)
+    {
+    .menu, .menu li{
+        flex-direction: column;
+        margin-left: 0;
+        flex: 0 0 100%;
+        background-color: #ff0;
+    }
+
 }
