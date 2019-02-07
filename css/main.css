@@ -5,25 +5,42 @@ html, body {
 }
 header {
 	display:flex;
-	background:#000;
-	padding-top:18px;
 	justify-content:space-around;
-	flex-flow: row wrap;
 }
 
 .container {
+    display:flex;
+	justify-content:center;
+    flex-flow: row wrap;
     width: 1200px;
     height: 100%;
     background-color: #f0f;
 }
 .menu {
     width: 100px;
+    flex: 1;
+    padding: 1em;
 }
 .menu:first-child {
     background-color: #ff0;
+    flex-grow: 1;
     
 }
 .menu:last-child {
     background-color: #007;
-   flex-grow:2;
+   /* margin-left: auto; */
+   display:flex;
+   justify-content:center;
+   flex-flow: row wrap;
+   flex-grow: 3;
+   margin: 0px;
 }   
+.menu li a{
+    color: #fff;
+}    
+.menu li{
+    width: 25%;
+    margin: auto;
+    text-align: center;
+    list-style: none;
+}
