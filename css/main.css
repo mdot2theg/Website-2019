@@ -1,0 +1,28 @@
+html, body {
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+header {
+	display:flex;
+	background:#000;
+	padding-top:18px;
+	justify-content:space-around;
+	flex-flow: row wrap;
+}
+
+.container {
+    width: 1200px;
+    height: 100%;
+    background-color: #f0f;
+}
+.menu:first-child {
+    background-color: #ff0;
+    width: 25%;
+    flex-grow: 1;
+}
+.menu:last-child {
+    background-color: #007;
+    width: 25%;
+    flex-grow: 3;
+}   
